@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, #87CEFA, #2685ce, #B0C4DE);
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    letter-spacing: 0.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+.container .location-infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+}
+
+.location-infor .location-name {
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+}
+
+.container .search-Box {
+    position: relative;
+}
+
+.search-Box i {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+}
+
+
+.search-Box #search-box {
+    width: 12rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding-left: 3rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+#search-box::placeholder {
+    font-weight: bold;
+}
+
+.container .location-weather {
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.location-weather .weathers {
+    font-weight: normal;
+    background-color: #87CEFA;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+img {
+    height: 5rem;
+}
+
+.container .location-temprature {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.location-temprature .temp {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.container .weather-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.weather-info .info {
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.info i {
+  display: flex;
+  align-items: end;
+  padding-left: 0.4rem;
+}
